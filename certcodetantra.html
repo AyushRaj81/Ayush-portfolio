@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class10mrksheet</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <button id="whiteButton" style="background-color: white; color: white;">white</button>
+        <button id="blackButton" style="background-color: black;">Black</button>
+        <div id="content" style="text-align: center;">
+            <h1 style="font-size: 3vw;">Python By CodeTantra</h1>
+
+          </div>
+        <div style="max-width: 100%; height: auto;">
+            
+            <iframe src="cetcodetantra.pdf" width="100%" height="600px"></iframe>
+
+        </div>
+    </div>
+    <script>
+        const whiteButton = document.getElementById('whiteButton');
+        const blackButton = document.getElementById('blackButton');
+        const content = document.getElementById('content');
+        const container =  document.getElementById("container")
+
+whiteButton.addEventListener('click', function() {
+  container.style.backgroundColor = 'white';
+  content.style.color = 'black';
+});
+
+blackButton.addEventListener('click', function() {
+  container.style.backgroundColor = 'black';
+  content.style.color = 'white';
+});
+    </script>
+</body>
+</html>

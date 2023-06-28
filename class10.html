@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class10mrksheet</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <button id="whiteButton" style="background-color: white; color: white;">white</button>
+        <button id="blackButton" style="background-color: black;">Black</button>
+        <div id="content" style="text-align: center;">
+            <h1 style="font-size: 3vw;">Class 10 Marksheet</h1>
+
+            <p style="padding: 10px; font-size: 1.6vw;">I completed my high school education from Foundation School in 2017, achieving a CGPA of 9.2. This laid a strong foundation for my academic journey and developed essential skills such as discipline and time management. It was during this time that my passion for learning and personal growth truly began to flourish</p>
+        </div>
+        <div style="max-width: 100%; height: auto;">
+            <img  style="width: 90%; padding: 30px; align-items: center;" src="10.jpg" alt="Image Description">
+        </div>
+    </div>
+    <script>
+        const whiteButton = document.getElementById('whiteButton');
+        const blackButton = document.getElementById('blackButton');
+        const content = document.getElementById('content');
+        const container =  document.getElementById("container")
+
+whiteButton.addEventListener('click', function() {
+  container.style.backgroundColor = 'white';
+  content.style.color = 'black';
+});
+
+blackButton.addEventListener('click', function() {
+  container.style.backgroundColor = 'black';
+  content.style.color = 'white';
+});
+    </script>
+</body>
+</html>
