@@ -40,11 +40,18 @@ function scrollToProject() {
   const contactContainer = document.getElementById("projects");
   contactContainer.scrollIntoView({ behavior: "smooth" });
 }
-function openEmailClient() {
+/*function openEmailClient() {
   const subject = encodeURIComponent("I want to hire you");
   const mailtoLink = `mailto:?subject=${subject}`;
   window.location.href = mailtoLink;
+}*/
+function openEmailClient() {
+  const recipientEmail = 'ayushraj21042002@gmail.com'; // Replace with the actual email address
+  const subject = encodeURIComponent("I want to hire you Ayush");
+  const mailtoLink = `mailto:${recipientEmail}?subject=${subject}`;
+  window.location.href = mailtoLink;
 }
+
 /*for navbar*/
 /*function toggleNavbar() {
   var navbar = document.getElementById("myTopnav");
